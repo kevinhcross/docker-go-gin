@@ -4,7 +4,7 @@ RUN mkdir -p /app
 WORKDIR /app
 
 ADD . /app
-RUN go build
+RUN go build -o app
 
 EXPOSE 8080
 
