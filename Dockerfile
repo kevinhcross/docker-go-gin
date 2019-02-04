@@ -4,8 +4,7 @@ RUN mkdir -p /app
 WORKDIR /app
 
 ADD . /app
-RUN go get github.com/gin-gonic/gin
-RUN go build ./app.go
+RUN go build
 
 EXPOSE 8080
 
